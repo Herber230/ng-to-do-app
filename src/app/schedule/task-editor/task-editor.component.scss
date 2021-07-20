@@ -1,0 +1,17 @@
+label, input, textarea, select {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-top: 25px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+input, select {
+  padding: 5px;
+}
+

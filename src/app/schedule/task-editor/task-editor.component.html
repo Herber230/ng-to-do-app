@@ -1,0 +1,18 @@
+<div>
+  <label for="task-title">
+    <strong>Titulo</strong>
+    <input id="task-title" type="text" [(ngModel)]="displayText"/>
+  </label>
+  <label for="task-description">
+    <strong>Descripcion</strong>
+    <input id="task-description" type="text" [(ngModel)]="description"/>
+  </label>
+  <label for="task-status">
+    <strong>Estado</strong>
+    <select [(ngModel)]="status">
+      <option value="done">Hecho</option>
+      <option value="onGoing">En Curso</option>
+      <option value="pending">Pendiente</option>
+    </select>
+  </label>
+</div>

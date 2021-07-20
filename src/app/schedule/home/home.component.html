@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>TO DO</h1>
+  <div class="break"></div>
+  <app-button (onClick)="onClick()">
+    <strong>AGREGAR</strong>
+  </app-button>
+  <div class="break"></div>
+  <div class="section">
+    <app-panel padding="narrow">
+      <div style="margin-top: 25px" *ngFor="let task of tasks">
+        <app-bullet
+          [displayText]="task.displayText"
+          [status]="task.status"
+          (onClick)="setSelectedTask(task)"
+        ></app-bullet>
+      </div>
+    </app-panel>
+  </div>
+  <div class="section">
+    <app-panel padding="narrow">
+      <app-task-editor [task]="selectedTask" ></app-task-editor>
+    </app-panel>
+  </div>
+</div>
